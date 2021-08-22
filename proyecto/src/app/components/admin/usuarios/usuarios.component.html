@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div style="margin-right: auto; margin-left: auto;" class="row">
+  <div style="margin-right: auto; margin-left: auto;" class="col-lg-10">
+    <div style="background-color:black;" class="card">
+      <div style="background-color: #A05344;" class="card-body">
+        <h4 class="card-title">Usuarios</h4>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Usuario</th>
+                <th>Correo</th>
+                <th>Rol</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of usuarios">
+                <td>{{user.id}}</td>
+                <td>{{user.nombre_usuario}}</td>
+                <td>{{user.correo}}</td>
+                <td *ngIf="user.rol == '1'"><span class="label label-danger">Lector</span></td>
+                <td *ngIf="user.rol == '2'"><span class="label label-danger">Escritor</span></td>
+                <td *ngIf="user.rol == '3'"><span class="label label-danger">Administrador</span></td>
+                <td *ngIf="user.rol == '4'"><span class="label label-danger">Moderador</span></td>
+                <td *ngIf="user.activo == '0'">
+                  <select name="" id="" (change)="cambiarActivo(user,$event)">
+                    <option value="on">Activo</option>
+                    <option value="off" selected>Desactivado</option>
+                  </select>
+                </td>
+                <td *ngIf="user.activo == '1'">
+                  <select name="" id="" (change)="cambiarActivo(user,$event)">
+                    <option value="on" selected>Activo</option>
+                    <option value="off">Desactivado</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

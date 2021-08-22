@@ -1,0 +1,92 @@
+.contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.sidebar {
+  flex-basis: calc(20%);
+  background-color: #a05344;
+  padding: 15px;
+  height: calc(160vh);
+  border: 3px solid #734046;
+  border-top: none;
+}
+
+.container-volver {
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.lista-capitulos {
+  font-size: 16px;
+}
+
+.lista-capitulos li {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.lista-capitulos :first-child {
+  border: 3px solid #734046;
+  background-color: #734046;
+  border-radius: 5px;
+}
+
+.contenedor-obra {
+  flex-basis: calc(80%);
+  display: flex;
+  flex-direction: column;
+}
+
+.barra-herramientas {
+  height: 50px;
+  background-color: #a05344;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.barra-herramientas i {
+  margin: auto 30px;
+}
+
+.titulo-obra {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.obra {
+  text-align: justify;
+  font-size: 25px;
+  height: 100%;
+  background-color: #321f28;
+  padding: 5% 10%;
+}
+
+.img-container {
+  border: 5px ridge gray;
+  height: 250px;
+  width: 200px;
+  margin: 25px 0;
+}
+
+.portadaObra {
+  height: 100%;
+  width: 100%;
+}

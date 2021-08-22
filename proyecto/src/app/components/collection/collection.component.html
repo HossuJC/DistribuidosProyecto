@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<section class="my-5 container-sm">
+
+  <h2>
+    Tu biblioteca
+  </h2>
+  <div *ngIf="coleccionVacio" class="mt-1 row anuncio">
+    <p>Aún no tienes libros guardados en tu biblioteca.</p>
+    <a class="nav-link" [routerLink]="['/busqueda']">Explora nuestro catálogo y empieza a leer.</a>
+  </div>
+  <div class="mt-1 row">
+    <a *ngFor="let bib of coleccion" id="{{bib.id}}" class="libro col-lg-3 col-md-4 col-sm-6">
+      <p class="boton-guardar" (click)="eliminarBib(bib.id)"><i class="fas fa-times color1"></i></p>
+      <img class="center" [routerLink]="['/vistaescritura', bib.obraId]" src="{{bib.obra.portada}}" alt="">
+      <p class="titulo-libro">{{bib.obra.titulo}}</p>
+      <p class="autor-libro">{{bib.obra.usuario.nombre}} {{bib.obra.usuario.apellido}}</p>
+    </a>
+  </div>
+
+</section>
+
+<section *ngIf="tipo!='1' " class="my-5 container-sm">
+
+  <h2>
+    Tus libros escritos
+  </h2>
+  <div *ngIf="escritosVacio" class="mt-1 row anuncio">
+    <p>Aun no has empezado a escribir ningun libro.</p>
+    <a class="nav-link" [routerLink]="['/formlibro']">Inicia un nuevo libro y comparte tus historias.</a>
+  </div>
+  <div class="mt-1 row">
+    <a *ngFor="let bib of escritos" id="{{bib.id}}" class="libro col-lg-3 col-md-4 col-sm-6">
+      <p class="boton-guardar" (click)="eliminarObra(bib.id)"><i class="fas fa-times color1"></i></p>
+      <img class="center" [routerLink]="['/vistaescritura', bib.id]" src="{{bib.portada}}" alt="">
+      <p class="titulo-libro">{{bib.titulo}}</p>
+    </a>
+  </div>
+
+</section>

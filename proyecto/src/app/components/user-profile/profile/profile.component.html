@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="hero">
+  <div class="profile-pic">
+    <img src="{{ usuario.foto }}" alt="Imagen de Perfil" />
+    <p class="username">{{ usuario.nombre }} {{ usuario.apellido }}</p>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <p class="stat-number">{{ librosBib }}</p>
+      <p class="stat-name">Libros en biblioteca</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">{{ autoresBib }}</p>
+      <p class="stat-name">Autores seguidos</p>
+    </div>
+    <div *ngIf="usuario.rol != '1'" class="stat">
+      <p class="stat-number">{{ librosEscritos }}</p>
+      <p class="stat-name">Libros escritos</p>
+    </div>
+  </div>
+</div>
+<section class="info">
+  <div class="nav">
+    <div id="nav-op-1" class="nav-option hover active" (click)="showAboutMe()">
+      Sobre mí
+    </div>
+    <div id="nav-op-2" class="nav-option hover" (click)="showPersonalInf()">
+      Información Personal
+    </div>
+    <div id="nav-op-3" class="nav-option hover" (click)="showSubs()">
+      Suscripciones
+    </div>
+  </div>
+  <div class="tabs">
+    <app-about-me id="tab1"></app-about-me>
+    <app-personal-info id="tab2" class="not-display"></app-personal-info>
+    <app-subscriptions id="tab3" class="not-display"></app-subscriptions>
+  </div>
+</section>

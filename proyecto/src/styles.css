@@ -1,0 +1,27 @@
+/**GLOBALES**/
+
+body {
+  background-color: #121212;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  color: #f0ede8;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.not-display {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* You can add global styles to this file, and also import other style files */
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.bubble.css";
+@import "~quill/dist/quill.snow.css";

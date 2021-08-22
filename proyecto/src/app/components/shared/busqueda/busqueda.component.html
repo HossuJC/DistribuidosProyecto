@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<section class="my-5 container-sm">
+
+    <form class="mb-5 ml-auto mr-auto">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="filterPost"
+            [(ngModel)]="filterPost">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+    <div class="titulo-div">
+        <h2>Resultados de la búsqueda:</h2>
+    </div>
+
+    <!--<div class="mt-1 row">
+        <a *ngFor="let post of posts | filter:filterPost" [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img class="center" src="{{post.src}}" alt="">
+            <p class="titulo-libro">{{post.titulo}}</p>
+            <p class="autor-libro">{{post.autor}}</p>
+        </a>
+    </div>-->
+    <div class="mt-1 row">
+        <a *ngFor="let libro of libros | filter:filterPost" class="col-lg-3 col-md-4 col-sm-6">
+            <p *ngIf="isInBib(libro.id)==false" class="boton-guardar" (click)="guardarBib(libro.id)"><i
+                    class="far fa-heart color1"></i></p>
+            <p *ngIf="isInBib(libro.id)" class="boton-guardar"><i class="fas fa-heart color2"></i></p>
+            <img class="center" [routerLink]="['/vistaescritura', libro.id]" src="{{libro.portada}}" alt="">
+            <p class="titulo-libro">{{libro.titulo}}</p>
+            <p class="autor-libro">{{libro.usuario.nombre}} {{libro.usuario.apellido}}</p>
+        </a>
+    </div>
+
+</section>

@@ -1,0 +1,33 @@
+.border-cont {
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  height: 220px;
+  flex-basis: calc(55% - 15px);
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMe-bio {
+  width: 90%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  resize: none;
+  color: #f0ede8;
+  background-color: #121212;
+  border: none;
+}
+
+.moreInfo {
+  flex-basis: calc(45% - 15px);
+}

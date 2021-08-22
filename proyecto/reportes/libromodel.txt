@@ -1,0 +1,17 @@
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 1, col 8, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 1, col 19, Error - Block must not be padded by blank lines. (padded-blocks)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 1, col 19, Error - Missing space before opening brace. (space-before-blocks)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 1, col 20, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 2, col 1, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 1, Error - This line has a length of 132. Maximum allowed is 80. (max-len)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 14, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 59, Error - A space is required after ','. (comma-spacing)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 82, Error - A space is required after ','. (comma-spacing)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 110, Error - A space is required after ','. (comma-spacing)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 132, Error - Missing space before opening brace. (space-before-blocks)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 3, col 133, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 4, col 1, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 5, col 4, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\shared\vista-escritor\libro.model.ts: line 6, col 2, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+
+15 problems

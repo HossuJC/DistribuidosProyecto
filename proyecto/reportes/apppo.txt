@@ -1,0 +1,18 @@
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 1, col 9, Error - There should be no space after '{'. (object-curly-spacing)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 1, col 30, Error - There should be no space before '}'. (object-curly-spacing)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 1, col 51, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 2, col 1, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 3, col 8, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 3, col 23, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 4, col 19, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 4, col 41, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 5, col 41, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 6, col 4, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 7, col 1, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 8, col 21, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 8, col 42, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 9, col 64, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 10, col 4, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\e2e\src\app.po.ts: line 11, col 2, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+
+16 problems

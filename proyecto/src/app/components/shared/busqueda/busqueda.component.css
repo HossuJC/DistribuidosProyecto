@@ -1,0 +1,70 @@
+h2 {
+  text-transform: uppercase;
+}
+
+/*
+.titulo-div {
+    margin: 0 auto;
+    width: 90%;
+}*/
+
+img {
+  height: 290px;
+  border: 2px solid #f2efea;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}
+
+form > button {
+  display: none;
+}
+
+.titulo-libro {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #f0ede8;
+  transition: transform 0.2s;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.boton-guardar {
+  font-size: 30px;
+  position: absolute;
+  right: 55px;
+  cursor: pointer;
+}
+
+.color1 {
+  color: black;
+  display: none;
+}
+
+a:hover .color1 {
+  display: unset;
+}
+
+.color1:hover {
+  color: rgb(255, 0, 76);
+}
+
+.color2 {
+  color: rgb(255, 0, 76);
+}

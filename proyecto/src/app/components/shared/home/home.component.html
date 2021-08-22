@@ -1,0 +1,103 @@
+<app-navbar></app-navbar>
+
+<section class="my-5 container-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <img class='portadaObra' src="../../../../assets/img/img-portada.jpg" alt="Portada de la obra">
+            </div>
+            <div class="col-sm-7 text-justify">
+                <h1>¡Bienvenido a Kafka!</h1>
+                <h3>Descubre una nueva comunidad online de lectores y escritores de todo el mundo. Busca, lee y guarda tus títulos favoritos o conviertete en escritor y se el autor de tus propias historias.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-5 container-sm">
+
+    <h2>Títulos destacados</h2>
+
+    <div class="mt-1 row">
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img class="center" src="../../../../assets/img/principito.jpg" alt="">
+            <p class="titulo-libro">El principito</p>
+            <p class="autor-libro">Antoine de Saint-Exupéry</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/cuervo.jpg" alt="">
+            <p class="titulo-libro">El cuervo</p>
+            <p class="autor-libro">Edgar Allan Poe</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/goblet.jpg" alt="">
+            <p class="titulo-libro">Harry Potter y el cáliz de fuego</p>
+            <p class="autor-libro">J.K Rowling</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/inferno.jpg" alt="">
+            <p class="titulo-libro">Inferno</p>
+            <p class="autor-libro">Dan Brown</p>
+        </a>
+    </div>
+
+</section>
+
+<section class="my-5 container-sm">
+
+    <h2>Nuevos títulos</h2>
+
+    <div class="mt-1 row">
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img class="center" src="../../../../assets/img/caminante.jpg" alt="">
+            <p class="titulo-libro">El caminante y su sombra</p>
+            <p class="autor-libro">Friedrich Nietzsche</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/cianuro.jpg" alt="">
+            <p class="titulo-libro">Cianuro Espumoso</p>
+            <p class="autor-libro">Agatha Cristhie</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/estudio-en-escarlata.jpg" alt="">
+            <p class="titulo-libro">Estudio en escarlata</p>
+            <p class="autor-libro">Arthur Conan Doyle</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/contacto.jpg" alt="">
+            <p class="titulo-libro">Contacto</p>
+            <p class="autor-libro">Carl Sagan</p>
+        </a>
+    </div>
+
+</section>
+
+<section class="my-5 container-sm">
+
+    <h2>Género de la semana: Suspenso</h2>
+
+    <div class="mt-1 row">
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img class="center" src="../../../../assets/img/psico.jpg" alt="">
+            <p class="titulo-libro">El psicoanalista</p>
+            <p class="autor-libro">John Katzenbach</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/resplandor.jpg" alt="">
+            <p class="titulo-libro">El resplandor</p>
+            <p class="autor-libro">Stephen King</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/dracula.jpg" alt="">
+            <p class="titulo-libro">Drácula</p>
+            <p class="autor-libro">Bram Stoker</p>
+        </a>
+        <a [routerLink]="['/vistaLectura']" class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../../../../assets/img/metamorfosisPortada.jpg" alt="">
+            <p class="titulo-libro">La Metamorfosis</p>
+            <p class="autor-libro">Franz Kafka</p>
+        </a>
+    </div>
+
+</section>
+<app-footer></app-footer>

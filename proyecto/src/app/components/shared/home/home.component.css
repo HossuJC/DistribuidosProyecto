@@ -1,0 +1,30 @@
+h2 {
+  text-transform: uppercase;
+}
+
+img {
+  height: 290px;
+  border: 2px solid #f2efea;
+}
+
+.titulo-libro {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #f0ede8;
+  transition: transform 0.2s;
+  text-align: center;
+  margin: 20px 0;
+}
+
+a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}

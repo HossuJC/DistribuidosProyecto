@@ -1,0 +1,45 @@
+<section class="personal-info">
+  <form action="" class="form border-cont">
+    <h4>Datos personales</h4>
+    <div class="form-box">
+      <label class="etiqueta" for="nombre">Nombre: </label>
+      <input class="info-edit" type="text" class="hidden" id="nombre" value="{{ user.nombre }}" />
+    </div><div class="form-box">
+      <label class="etiqueta" for="apellido">Apellido: </label>
+      <input class="info-edit" type="text" class="hidden" id="apellido" value="{{ user.apellido }}" />
+    </div>
+    <div class="form-box">
+      <label class="etiqueta" for="nombre_usuario">Usuario: </label>
+      <input class="info-edit" type="text" class="hidden" id="nombre_usuario" value="{{ user.nombre_usuario }}" />
+    </div>
+    <div class="form-box">
+      <label class="etiqueta" for="correo">Correo: </label>
+      <input class="info-edit" type="email" class="hidden" id="correo" value="{{ user.correo }}" />
+    </div>
+    <div class="form-box">
+      <label class="etiqueta" for="fecha_nacimiento">Fecha de Nacimiento: </label>
+      <input class="info-edit" type="date" class="hidden" id="fecha_nacimiento" value="{{ user.fecha_nacimiento }}" />
+    </div>
+    <div class="form-box">
+      <label class="etiqueta" for="pais">País: </label>
+      <input class="info-edit" type="text" class="hidden" id="pais" value="{{ user.pais }}" />
+    </div>
+    <div class="form-box">
+      <label class="etiqueta" for="fptp">Foto de perfil: </label>
+      <input class="info-edit" type="text" class="hidden" id="foto" value="{{ user.foto }}" />
+    </div>
+    <button (click)="onSubmit()" type="submit" class="botones botonseguir">Actualizar datos</button>
+  </form>
+  <form action="" class="form border-cont">
+    <h4>Contraseña</h4>
+    <div class="form-box">
+      <label class="etiqueta" for="password1">Contraseña: </label>
+      <input class="info-edit" type="password" class="hidden" id="password1" placeholder="Nueva contraseña"/>
+    </div>
+    <div class="form-box">
+      <label class="etiqueta" for="password2">Contraseña: </label>
+      <input class="info-edit" type="password" class="hidden" id="password2" placeholder="Repetir contraseña" />
+    </div>
+    <button (click)="onSubmitPass()" type="submit" class="botones botonseguir">Cambiar contraseña</button>
+  </form>
+</section>

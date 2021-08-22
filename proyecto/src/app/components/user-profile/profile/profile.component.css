@@ -1,0 +1,101 @@
+.hero {
+  background-image: url(../../../../assets/img/library-banner-filtered.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(20px);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.profile-pic img {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.profile-pic p {
+  flex-basis: 40%;
+  font-weight: bold;
+}
+
+.username {
+  font-size: 20px;
+}
+
+.stats {
+  margin-top: 10px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.stat-number {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.stat-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  background-color: #a05344;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nav-option {
+  padding: 20px;
+}
+
+.nav-option:hover {
+  cursor: pointer;
+}
+
+.tabs {
+  text-align: center;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+.not-display {
+  display: none;
+}*/
+
+.active {
+  background-color: #734046;
+}

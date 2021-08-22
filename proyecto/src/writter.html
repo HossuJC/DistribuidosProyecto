@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Kafka</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="img/kafka.ico" />
+  <link rel="StyleSheet" href="/styles.css" type="text/css" />
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+  <script>
+    tinymce.init({
+      selector: "textarea#editor",
+      menubar: false,
+    });
+  </script>
+</head>
+
+<body>
+  <app-root></app-root>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="img/kafka.png" /> Kafka</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Explora</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi Biblioteca</a>
+          </li>
+          <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mi Biblioteca
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Explora</a></li>
+                            <li><a class="dropdown-item" href="#">Catálogo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Mi Biblioteca</a></li>
+                        </ul>
+                    </li> -->
+          <li class="nav-item">
+            <!--
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        -->
+            <img id="foto_perfil" src="img/perfil1.jpg" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="modal-body row">
+    <div class="col-md-3">
+      <!-- Your first column here -->
+      <div id="navegacion_lateral" class="container mt-4 mb-4">
+        <img id="portada" src="/proyecto/src/img/libro1.jpg" />
+        <button id="publicar" type="submit" class="btn btn-primary">
+          Publicar
+        </button>
+        <h2 class="h2 mb-4">Título del libro</h2>
+        <p>Prólogo</p>
+        <p>Capítulo 1</p>
+        <p>Capítulo 2</p>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <!-- Your second column here -->
+      <div class="container mt-4 mb-4">
+        <div class="col-md-12 col-lg-8">
+          <h1 class="h2 mb-4">Título del libro</h1>
+          <label>Capítulo 1</label>
+          <div class="form-group">
+            <textarea id="editor"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

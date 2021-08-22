@@ -1,0 +1,67 @@
+section {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+label,
+p {
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-right: 10px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-cont {
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(50% - 15px);
+}
+
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.etiqueta {
+  margin-right: 20px;
+}
+
+.change {
+  font-size: 20px;
+  color: #c8580e;
+}
+
+.change:hover {
+  cursor: pointer;
+}

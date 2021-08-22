@@ -1,0 +1,85 @@
+<div class="book-form">
+  <h2>Descripción de la Obra</h2>
+  <form [formGroup]="libroForm" action="">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-8 col-xl-10">
+          <div class="titulo-container">
+
+            <label class="book-label" for="title">Título</label>
+            <input formControlName="titulo" type="text" id="title" class="form-control">
+            <small style="color: red;" *ngIf="checkError('titulo', 'required') && libroForm.controls['titulo'].touched">
+              Ingrese un titulo.
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-xl-10">
+          <div class="sipnosis-container">
+            <div class="sipnosis-label">
+              <label for="sinopsis" class="sipnosis-label">Sinopsis</label>
+            </div>
+            <div class="sipnosis-area">
+              <textarea formControlName="sinopsis" name="sipnosis" id="siparea" class="text-sipnosis"></textarea>
+              <small style="color: red;"
+                *ngIf="checkError('sinopsis', 'required') && libroForm.controls['sinopsis'].touched">
+                Ingrese una sinopsis.
+              </small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="genero-container">
+            <label class="genero-label" for="genero">Género</label>
+            <div class="genero-select">
+              <select formControlName="genero" class="form-group" name="genero" id="genero"
+                aria-label="Default select example">
+                <option class="default" hidden selected>Escoge un género</option>
+                <option *ngFor="let gen of generos" value={{gen.nombre}}>{{gen.nombre}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="demo-switch-title">Exclusivo</div>
+          <div class="switch">
+            <label>
+              <input formControlName="exclusivo" type="checkbox" checked=""><span
+                class="lever switch-col-brown"></span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-11">
+        <div class="clasificacion-container">
+          <label for="Clasificacion">Clasificación</label>
+          <div *ngFor="let clasi of clasificacion; let i = index" class="clasificacion-radio">
+            <div class="radio-label">
+              <input formControlName="clasificacion" type="radio" value={{clasi}}>
+
+              <label for="clasificacion-check">{{clasi}}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="buttons-container">
+
+          <button type="submit" class="botones botonatras" (click)="atras()">Cancelar</button>
+          <button (click)="onSubmit(libroForm.value)" type="submit" class="botones botonseguir">Comenzar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>

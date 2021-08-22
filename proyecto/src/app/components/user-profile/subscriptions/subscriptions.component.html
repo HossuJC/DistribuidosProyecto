@@ -1,0 +1,11 @@
+<section>
+  <div>
+    <h3>Autores que sigo ({{ autoresBib }})</h3>
+    <div class="authors">
+      <div *ngFor="let sub of autores" class="author-info">
+          <img src="{{ sub.foto }}" alt="{{ sub.name }} {{sub.apellido}} picture" class="author-pic" />
+        <p class="author-name">{{ sub.nombre }} {{sub.apellido}}</p>
+      </div>
+    </div>
+  </div>
+</section>

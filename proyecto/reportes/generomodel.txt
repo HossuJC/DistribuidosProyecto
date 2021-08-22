@@ -1,0 +1,13 @@
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 1, col 8, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 1, col 20, Error - Block must not be padded by blank lines. (padded-blocks)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 1, col 20, Error - Missing space before opening brace. (space-before-blocks)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 1, col 21, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 2, col 1, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 3, col 14, Error - Missing JSDoc comment. (require-jsdoc)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 3, col 56, Error - Missing space before opening brace. (space-before-blocks)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 3, col 57, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 4, col 1, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 5, col 4, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+C:\Users\itorr\github\Kafka\proyecto\src\app\components\formlibro\genero.model.ts: line 6, col 2, Error - Expected linebreaks to be 'LF' but found 'CRLF'. (linebreak-style)
+
+11 problems

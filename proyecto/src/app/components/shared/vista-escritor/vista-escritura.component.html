@@ -1,0 +1,105 @@
+<app-navbar></app-navbar>
+<div class="container-fluid contenedor-flex">
+    <div class="sidebar">
+        <div *ngIf="editable() === false" type="submit" class="container-volver" (click)="atras()">
+            <i class="far fa-arrow-alt-circle-left volver"></i> Volver
+        </div>
+        <div *ngIf="editable() === true" type="submit" class="container-volver" (click)="atrasBib()">
+            <i class="far fa-arrow-alt-circle-left volver"></i> Volver
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img class="portadaObra" src="{{ portadaurl }}" alt="Portada de la obra" />
+            </div>
+            <div class="datosObra-container">
+                <p class="titulo">{{ titulolibro }}</p>
+                <ul style="
+            width: auto;
+            height: auto;
+            max-height: calc(100vh - 581px);
+            overflow: auto;
+          " class="lista-capitulos">
+                    <div *ngFor="let seccion of secciones; let i = index" class="div-cap">
+                        <i *ngIf="editable() === true" (click)="borrarCap(i)" class="fas fa-times borrar-cap"></i>
+                        <li class="pointer" (click)="change(i)">
+                            {{ seccion.titulo ? seccion.titulo : "Sin titulo" }}
+                        </li>
+                    </div>
+                </ul>
+                <button *ngIf="editable() === true" style="margin-top: 0.25rem" (click)="newSection()"
+                    class="btn btn-danger">
+                    Agregar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--Fin sidebar-->
+    <div class="contenedor-obra">
+        <!--<div class="barra-herramientas">
+            <a routerLink="." (click)="save_libro(contenido.value,titulo.value)"><i class="fa fa-floppy-o" aria-hidden="true"></i></a> -->
+        <!-- <i class="fa fa-bold" aria-hidden="true"></i>
+            <i class="fa fa-italic" aria-hidden="true"></i>
+            <i class="fa fa-superscript" aria-hidden="true"></i>
+            <i class="fa fa-underline" aria-hidden="true"></i>
+            <i class="fas fa-highlighter"></i>
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+            <i class="fa fa-align-center" aria-hidden="true"></i>
+            <i class="fa fa-align-right" aria-hidden="true"></i> 
+        </div>-->
+
+        <textarea [readonly]="editable() === false" [value]="tituloCap" #titulo (keyup)="saveTitle(titulo.value)"
+            class="area" placeholder="Titulo del capítulo." id="capitulo"></textarea>
+
+        <!-- <textarea [value]="contenidoarea" #contenido class="area" placeholder="Comienza tu historia." id="descripcion"></textarea> -->
+        <angular-editor *ngIf="editable() === true" #content (keyup)="saveContent()" [config]="configT"
+            [(ngModel)]="contenidoCap"></angular-editor>
+        <angular-editor *ngIf="editable() === false" #content (keyup)="saveContent()" [config]="configF"
+            [(ngModel)]="contenidoCap"></angular-editor>
+    </div>
+    <!--Fin de contenedor barra de herramientas y texto obra-->
+</div>
+<!--<div class="toolbar" (click)="prueba()">
+    <ul class="tool-list">
+        <li class="tool">
+            <button type="button" data-command='justifyLeft' class="tool--btn">
+                <i class=' fas fa-align-left'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command='justifyCenter' class="tool--btn">
+                <i class=' fas fa-align-center'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="bold" class="tool--btn">
+                <i class=' fas fa-bold'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="italic" class="tool--btn">
+                <i class=' fas fa-italic'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="underline" class="tool--btn">
+                <i class=' fas fa-underline'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="insertOrderedList" class="tool--btn">
+                <i class=' fas fa-list-ol'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="insertUnorderedList" class="tool--btn">
+                <i class=' fas fa-list-ul'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="createlink" class="tool--btn">
+                <i class=' fas fa-link'></i>
+            </button>
+        </li>
+    </ul>
+</div>
+<div id="output" contenteditable="true"></div>-->

@@ -7,7 +7,7 @@ FROM node:latest as builder
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY package.json /app
+COPY package*.json /app
 RUN npm install --legacy-peer-deps
 COPY . /app
 RUN npm run build
@@ -17,6 +17,6 @@ RUN npm run build
 
 # Use official nginx image as the base image
 FROM nginx:latest
-
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /app/dist/proyecto /usr/share/nginx/html
 EXPOSE 4200:80
